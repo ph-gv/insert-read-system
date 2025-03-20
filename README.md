@@ -1,7 +1,7 @@
 # Insert & Read System
  🔍 **Descrição (Description)**
-  Um simples sistema de registro construído em python.  
-  A simple registration system built in python.
+ - Um simples sistema de registro construído em python.  
+ - A simple registration system built in python.
 
  ✨ **Funcionalidades (Features)**  
  - Registra e Exibe uma lista com nome e idade de diferentes pessoas.
