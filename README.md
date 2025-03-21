@@ -1,5 +1,6 @@
 # Insert & Read System
  **PT-BR**
+
 🔍 **Descrição**
  - Sistema de Cadastro de Pessoas via linha de comando, desenvolvido em Python.
 
@@ -16,6 +17,7 @@
  - json (para manipulação de arquivos JSON)
 
 🏗️ **Estrutura do Código**
+
 Importação de Bibliotecas:
  - Usa o módulo json para manipulação de arquivos e armazenamento dos dados.
 
@@ -49,6 +51,7 @@ Interface de Linha de Comando:
  - json (for handling JSON files)
 
 🏗️ **Code Structure**
+
 Library Import:
  - Uses the json module to handle files and store data.
 
