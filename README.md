@@ -22,11 +22,11 @@ Importação de Bibliotecas:
  - Usa o módulo json para manipulação de arquivos e armazenamento dos dados.
 
 Funções Principais:
- - show(): Exibe a lista de pessoas cadastradas.
- - add(): Adiciona uma nova pessoa ao sistema, validando nome e idade.
- - validate_name(name): Garante que o nome contenha apenas letras e espaços.
- - validate_age(age): Verifica se a idade informada é um valor numérico.
- - l(): Exibe um separador visual para organização no terminal.
+ - `show()`: Exibe a lista de pessoas cadastradas.
+ - `add()`: Adiciona uma nova pessoa ao sistema, validando nome e idade.
+ - `validate_name(name)`: Garante que o nome contenha apenas letras e espaços.
+ - `validate_age(age)`: Verifica se a idade informada é um valor numérico.
+ - `l()`: Exibe um separador visual para organização no terminal.
 
 Interface de Linha de Comando:
  - Exibe um menu interativo para escolha das opções.
@@ -56,11 +56,11 @@ Library Import:
  - Uses the json module to handle files and store data.
 
 Main Functions:
- - show(): Displays the list of registered people.
- - add(): Adds a new person to the system, validating name and age.
- - validate_name(name): Ensures the name contains only letters and spaces.
- - validate_age(age): Checks if the given age is a numeric value.
- - l(): Displays a visual separator for terminal organization.
+ - `show()`: Displays the list of registered people.
+ - `add()`: Adds a new person to the system, validating name and age.
+ - `validate_name(name)`: Ensures the name contains only letters and spaces.
+ - `validate_age(age)`: Checks if the given age is a numeric value.
+ - `l()`: Displays a visual separator for terminal organization.
 
 Command-Line Interface:
  - Displays an interactive menu for option selection.
