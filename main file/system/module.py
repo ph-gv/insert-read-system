@@ -1,6 +1,6 @@
 import json
 
-def show():
+def show() -> str:
     """
     -->Exibe lista de cadastrados ao usuário.
     """
@@ -19,7 +19,7 @@ def show():
         print('\033[31mO arquivo não foi encontrado.\033[m')
 
 
-def add():
+def add() -> str:
     """
     -->Adiciona e salva dados em uma lista.
     """
@@ -51,7 +51,7 @@ def add():
     print(f'\033[32m{name} cadastrado com sucesso!\033[m')
 
 
-def validate_name(name):
+def validate_name(name) -> bool:
     """
     -->Verifica se o valor digitado pelo usuário é válido.
     """
@@ -64,7 +64,7 @@ def validate_name(name):
         return False
 
 
-def validate_age(age):
+def validate_age(age) -> bool:
     """
     -->Verifica se o valor digitado pelo usuário é válido.
     """
@@ -76,5 +76,5 @@ def validate_age(age):
         return False
 
 
-def l():
+def l() -> str:
     print('---'*10)
