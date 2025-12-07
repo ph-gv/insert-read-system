@@ -1,68 +1,65 @@
-# Insert & Read System
- **PT-BR**
+# 🗂️ Sistema de Cadastro CRUD - Python & CustomTkinter
 
-🔍 **Descrição**
- - Sistema de Cadastro de Pessoas via linha de comando, desenvolvido em Python.
+[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
+[![SQLite](https://img.shields.io/badge/SQLite-3-lightgrey.svg)](https://www.sqlite.org/)
+[![CustomTkinter](https://img.shields.io/badge/UI-CustomTkinter-darkgreen.svg)](https://github.com/TomSchimansky/CustomTkinter)
 
-✨ **Funcionalidades**
- - Visualizar Pessoas Cadastradas
- - Cadastrar Novas Pessoas
- - Validação de Nome e Idade
- - Armazenamento em JSON para persistência dos dados
+## 📌 Sobre o Projeto
+Este projeto consiste em um sistema **CRUD** (Create, Read, Update, Delete) evolutivo. Originalmente concebido como um script CLI simples, foi refatorado para uma arquitetura moderna baseada em **MVC (Model-View-Controller)** e **DAO (Data Access Object)**, utilizando **SQLite** para persistência e **CustomTkinter** para uma interface gráfica intuitiva e responsiva.
 
-🛠️ **Tecnologias Utilizadas**
- - Python 3.12.8
+O foco principal foi o desacoplamento de lógica e a aplicação de boas práticas de Engenharia de Software aprendidas anteriormente com Java/Swing.
 
-📚 **Bibliotecas**
- - json (para manipulação de arquivos JSON)
+## 🏗️ Arquitetura e Estrutura de Pastas
+O projeto é organizado em módulos para garantir a separação de responsabilidades:
 
-🏗️ **Estrutura do Código**
+```text
+insert-read-system/
+├── app.py                  # Ponto de entrada (Entry Point)
+├── database.db             # Banco de dados SQLite
+├── model/
+│   └── pessoa_model.py     # POJO (Plain Old Java Object) com Dataclasses
+├── dao/
+│   └── pessoa_dao.py       # Camada de Persistência (SQL)
+├── util/
+│   └── db_connector.py     # Gerenciamento de Conexão e Tabelas
+└── view/
+    ├── main_view.py        # Janela Principal
+    └── add_person_view.py  # Janela de Formulário Modal
+````
 
-Importação de Bibliotecas:
- - Usa o módulo json para manipulação de arquivos e armazenamento dos dados.
+## 🚀 Funcionalidades Atuais
 
-Funções Principais:
- - `show()`: Exibe a lista de pessoas cadastradas.
- - `add()`: Adiciona uma nova pessoa ao sistema, validando nome e idade.
- - `validate_name(name)`: Garante que o nome contenha apenas letras e espaços.
- - `validate_age(age)`: Verifica se a idade informada é um valor numérico.
- - `l()`: Exibe um separador visual para organização no terminal.
+  - [x] Interface moderna com suporte nativo a temas (Claro/Escuro).
+  - [x] Listagem dinâmica de usuários via `ScrollableFrame`.
+  - [x] Cadastro de novos usuários através de janelas modais (`CTkToplevel`).
+  - [x] Exclusão direta de registros com atualização de interface reativa.
+  - [x] Validação de dados (tipagem de idade e campos não vazios).
 
-Interface de Linha de Comando:
- - Exibe um menu interativo para escolha das opções.
- - Permite ao usuário visualizar e adicionar cadastros facilmente.
- - Apresenta mensagens de erro para entradas inválidas.
+## 🛠️ Tecnologias Utilizadas
 
- **EN-US**
+  - **Linguagem:** Python 3.12+
+  - **Interface Gráfica:** CustomTkinter (Extensão moderna do Tkinter)
+  - **Banco de Dados:** SQLite3
+  - **Mapeamento de Dados:** Python Dataclasses
 
-🔍 **Description**
- - Command-line People Registration System, developed in Python.
+## 🔧 Como Executar
 
-✨ **Features**
- - View Registered People
- - Register New People
- - Name and Age Validation
- - JSON Storage for Data Persistence
+1.  Instale a biblioteca necessária:
+    ```bash
+    pip install customtkinter
+    ```
+2.  Execute a aplicação a partir da raiz:
+    ```bash
+    python app.py
+    ```
 
-🛠️ **Technology**
- - Python 3.12.8
+## 📈 Roadmap (Futuras Implementações)
 
-📚 **Library**
- - json (for handling JSON files)
+  - [ ] Implementar edição de registros existentes (Update).
+  - [ ] Adicionar pop-ups de confirmação (Dialogs) para ações críticas.
+  - [ ] Criar sistema de filtro/busca dinâmica por nome.
+  - [ ] Implementar exportação de relatórios (CSV/PDF).
 
-🏗️ **Code Structure**
+-----
 
-Library Import:
- - Uses the json module to handle files and store data.
-
-Main Functions:
- - `show()`: Displays the list of registered people.
- - `add()`: Adds a new person to the system, validating name and age.
- - `validate_name(name)`: Ensures the name contains only letters and spaces.
- - `validate_age(age)`: Checks if the given age is a numeric value.
- - `l()`: Displays a visual separator for terminal organization.
-
-Command-Line Interface:
- - Displays an interactive menu for option selection.
- - Allows users to easily view and add registrations.
- - Shows error messages for invalid inputs.
+Desenvolvido como projeto de aprimoramento individual em Python e Engenharia de Software.
